@@ -6,16 +6,28 @@
 \origin unavailable
 \textclass article
 \begin_preamble
-%\usepackage{indentfirst}
+% Indentação do primeiro parágrafo.
+\usepackage{indentfirst}
+
+% Garante não ultrapassar a URL para além da borda do texto.
+%	(Acrescentar também 'hyphens' nas opções globais da "Classe de Documento".)
+\sloppy
+
+% Algumas definições personalizadas.
 \usepackage{misc}
 
-%\usepackage{unidades}
+% Tratamento de unidades no SI.
 \usepackage[load-configurations=version-1]{siunitx}
+
+% Largura da linha de rodapé.
+%	(Por padrão, o tamanho é 0pt.)
+\renewcommand{\footrulewidth}{0.4pt} 
 \end_preamble
-\options titlepage
+\options titlepage, hyphens
 \use_default_options false
 \begin_modules
 theorems-ams
+customHeadersFooters
 \end_modules
 \maintain_unincluded_children false
 \language brazilian
@@ -87,7 +99,7 @@ theorems-ams
 \dynamic_quotes 0
 \papercolumns 1
 \papersides 2
-\paperpagestyle default
+\paperpagestyle fancy
 \tracking_changes false
 \output_changes false
 \html_math_output 0
@@ -98,18 +110,57 @@ theorems-ams
 \begin_body
 
 \begin_layout Title
+
+\family typewriter
+\size huge
+\emph on
+\begin_inset Graphics
+	filename /home/mpt/Documentos/Projetos/engenhartis/engenhartis.local/logo/logo-engenhartis.png
+	lyxscale 10
+	height 3cm
+
+\end_inset
+
+
+\begin_inset VSpace vfill
+\end_inset
+
+
+\family default
+\emph default
 Formulário de Eletromagnetismo
+\size default
+
 \begin_inset Newline newline
 \end_inset
 
 
-\size footnotesize
+\size small
 v.
- 1.0.0-a4
+ 1.0.0-a4-fv 
 \end_layout
 
 \begin_layout Date
 julho de 2021
+\family typewriter
+\size huge
+\emph on
+
+\begin_inset VSpace vfill
+\end_inset
+
+
+\family default
+\size default
+\emph default
+
+\begin_inset Graphics
+	filename /home/mpt/Documentos/Projetos/engenhartis/engenhartis.conteudo-aberto/imagens/icones/cc-by-sa-186x62-icon-cc-0.75.png
+	height 0.9cm
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -123,10 +174,6 @@ status open
 thispagestyle{empty}
 \end_layout
 
-\end_inset
-
-
-\begin_inset Newpage cleardoublepage
 \end_inset
 
 

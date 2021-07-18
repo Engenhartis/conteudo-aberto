@@ -6,15 +6,20 @@
 \origin unavailable
 \textclass article
 \begin_preamble
-%\usepackage{indentfirst}
+% Algumas definições personalizadas.
 \usepackage{misc}
 
-%\usepackage{unidades}
+% Tratamento de unidades no SI.
 \usepackage[load-configurations=version-1]{siunitx}
+
+% Largura da linha de rodapé.
+%	(Por padrão, o tamanho é 0pt.)
+\renewcommand{\footrulewidth}{0.4pt} 
 \end_preamble
 \options titlepage
 \use_default_options false
 \begin_modules
+customHeadersFooters
 theorems-ams
 \end_modules
 \maintain_unincluded_children false
@@ -43,8 +48,8 @@ theorems-ams
 \spacing single
 \use_hyperref true
 \pdf_bookmarks true
-\pdf_bookmarksnumbered false
-\pdf_bookmarksopen false
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
 \pdf_bookmarksopenlevel 1
 \pdf_breaklinks true
 \pdf_pdfborder true
@@ -77,6 +82,8 @@ theorems-ams
 \shortcut idx
 \color #008000
 \end_index
+\headheight 1.5cm
+\headsep 1cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -86,8 +93,8 @@ theorems-ams
 \quotes_style english
 \dynamic_quotes 0
 \papercolumns 1
-\papersides 2
-\paperpagestyle default
+\papersides 1
+\paperpagestyle fancy
 \tracking_changes false
 \output_changes false
 \html_math_output 0
@@ -778,6 +785,13 @@ mathrm{esp}}
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -785,7 +799,7 @@ status open
 
 
 \backslash
-pagestyle{myheadings}
+markboth{}{}
 \end_layout
 
 \end_inset
@@ -809,23 +823,11 @@ pagenumbering{roman}
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset CommandInset toc
-LatexCommand tableofcontents
+\begin_layout Left Footer
+\begin_inset Argument 1
+status open
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -833,7 +835,7 @@ status open
 
 
 \backslash
-pagestyle{myheadings}
+thepage
 \end_layout
 
 \end_inset
@@ -841,7 +843,16 @@ pagestyle{myheadings}
 
 \end_layout
 
-\begin_layout Standard
+\end_inset
+
+
+\end_layout
+
+\begin_layout Center Footer
+
+\end_layout
+
+\begin_layout Right Footer
 \begin_inset ERT
 status open
 
@@ -849,7 +860,17 @@ status open
 
 
 \backslash
-pagenumbering{arabic}
+thepage
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -863,8 +884,7 @@ Apresentação
 \end_layout
 
 \begin_layout Standard
-\paragraph_spacing double
-\noindent
+\paragraph_spacing single
 \begin_inset ERT
 status open
 
@@ -881,9 +901,26 @@ addcontentsline{toc}{section}{Apresentação}
 \end_layout
 
 \begin_layout Standard
-\paragraph_spacing double
-\noindent
-Formulário de Eletromagnetismo I com notações conforme 
+\paragraph_spacing onehalf
+Este formulário traz inúmeras equações dos fundamentos do Eletromagnetismo,
+ de forma categorizada por meio das seções e subseções.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+Espera-se que ele possa auxiliar os estudantes na interpretação e na escolha
+ das adequadas equações durante a resolução de cada tipo de problema.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+Os professores também poderão fazer uso deste material, tanto na forma digital
+ quanto impressa, como formulário de consulta durante avaliações.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+As notações utilizadas encontram-se conforme as apresentadas no livro 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "wentworth2007ele"
@@ -899,19 +936,253 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
-\paragraph_spacing double
-\noindent
-Se encontrar algum erro ou tiver alguma sugestão, acesse:
+\paragraph_spacing onehalf
+O corrente formulário foi compilado para 
+\emph on
+folha
+\emph default
+ 
+\emph on
+A4 frente e verso
+\emph default
+.
+ Uma cópia poderá ser baixada no seguinte endereço, onde também encontra-se
+ a versão para 
+\emph on
+folha A5 frente e verso
+\emph default
+, além de outros materiais.
 \end_layout
 
 \begin_layout Standard
-\paragraph_spacing double
-\noindent
+\paragraph_spacing onehalf
+\align center
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.engenhartis.com.br/materiais/materiais-abertos
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+A atual compilação foi produzida com base no material publicado em 2011,
+ por Marcelo P.
+ Trevizan, segundo a licença 
+\emph on
+Creative Commons Atri\SpecialChar softhyphen
+bui\SpecialChar softhyphen
+ção\SpecialChar softhyphen
+Com\SpecialChar softhyphen
+par\SpecialChar softhyphen
+tilhaIgual 3.0 Não Adaptada (CC BY-SA 3.0)
+ 
+\emph default
+e é republicada agora segundo licença semelhante, em sua versão 
+\emph on
+4.0
+\emph default
+, pela 
+\emph on
+Engenhartis
+\emph default
+, com a contribuição do mesmo autor.
+ Ver a seção 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "sec:Produção"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "sec:Produção"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e a seção 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "sec:Licença"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "sec:Licença"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ para mais informações.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+Este material está disponibilizado segundo a licença
+\emph on
+ 
+\emph default
+
 \begin_inset CommandInset href
 LatexCommand href
-name "http://code.google.com/p/lalfrecom/issues/list"
-target "http://code.google.com/p/lalfrecom/issues/list"
+name "Atribuição-CompartilhaIgual 4.0 Internacional (CC BY-SA 4.0)"
+target "https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR"
 literal "false"
+
+\end_inset
+
+.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\paragraph_spacing onehalf
+\align center
+\begin_inset Graphics
+	filename /home/mpt/Documentos/Projetos/engenhartis/engenhartis.conteudo-aberto/imagens/icones/cc-by-sa-88x31-badge.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+\align center
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace vfill
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+Visite-nos na 
+\emph on
+Engenhartis
+\emph default
+!
+\series default
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/mpt/Documentos/Projetos/engenhartis/engenhartis.conteudo-aberto/imagens/logos/logo-engenhartis.png
+	lyxscale 10
+	height 2.5cm
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://www.engenhartis.com.br
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace vfill
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 
@@ -921,15 +1192,223 @@ literal "false"
 \begin_layout Standard
 \paragraph_spacing double
 \noindent
-e clique em 
-\emph on
-New issue
-\emph default
- (é necessário ter conta no Google).
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage newpage
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+thispagestyle{plain}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Left Footer
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thepage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Center Footer
+
+\end_layout
+
+\begin_layout Right Footer
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thepage
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Left Header
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+leftmark
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Right Header
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+leftmark
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Left Footer
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thepage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Center Footer
+
+\end_layout
+
+\begin_layout Right Footer
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thepage
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{arabic}
+\end_layout
+
 \end_inset
 
 
@@ -1153,7 +1632,7 @@ forma diferencial:
 \end_layout
 
 \begin_layout Subsection
-Pontencial Elétrico
+Potencial Elétrico
 \end_layout
 
 \begin_layout Itemize
@@ -2229,6 +2708,7 @@ name "tab:Analogia-entre-circuitos-eletricos-magneticos"
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="4">
 <features tabularvalignment="middle">
@@ -8193,11 +8673,19 @@ clearpage
 
 \begin_layout Section
 Produção
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Produção"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Description
 Autor: Prof\SpecialChar endofsentence
- Marcelo Porto Trevizan
+ Marcelo P.
+ Trevizan
 \begin_inset Foot
 status open
 
@@ -8212,12 +8700,13 @@ Professor da Escola de Engenharia Mauá.
 
 \begin_layout Description
 Editor: Prof\SpecialChar endofsentence
- Marcelo Porto Trevizan
+ Marcelo P.
+ Trevizan
 \end_layout
 
 \begin_layout Description
 Revisores: Prof\SpecialChar endofsentence
- Arnaldo Megrich
+ Arnaldo Megrich (da versão de 2011)
 \begin_inset Foot
 status open
 
@@ -8228,7 +8717,8 @@ Professor da Escola de Engenharia Mauá e da Universidade São Judas Tadeu.
 \end_inset
 
 , Prof\SpecialChar endofsentence
- Marcelo Porto Trevizan
+ Marcelo P.
+ Trevizan (da versão de 2011 e da atual)
 \end_layout
 
 \begin_layout Description
@@ -8252,7 +8742,56 @@ literal "true"
 \end_layout
 
 \begin_layout Section
+Histórico
+\end_layout
+
+\begin_layout Subsection*
+2021 – v\SpecialChar endofsentence
+ 1.0.0
+\end_layout
+
+\begin_layout Itemize
+Complementações de leiaute.
+\end_layout
+
+\begin_layout Itemize
+Nova redação para a seção de apresentação.
+\end_layout
+
+\begin_layout Itemize
+Alteração da licença.
+\end_layout
+
+\begin_layout Itemize
+Retiradas as informações para obtenção do código-fonte e compilação do material.
+\end_layout
+
+\begin_layout Itemize
+Publicação em conjunto com a 
+\emph on
+Engenhartis
+\emph default
+.
+\end_layout
+
+\begin_layout Subsection*
+2011 – v\SpecialChar endofsentence
+ 0.1.0
+\end_layout
+
+\begin_layout Standard
+Versão publicada anterior.
+\end_layout
+
+\begin_layout Section
 Licença
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Licença"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -8260,12 +8799,7 @@ Este documento é disponibilizado sob a licença abaixo descrita.
 \end_layout
 
 \begin_layout Subsection*
-
-\series bold
-Creative Commons – Atribuição-Compartilhamento pela mesma Licença 3.0 
-\series default
-\emph on
-Unported
+Atribuição-CompartilhaIgual 4.0 Internacional (CC BY-SA 4.0)
 \end_layout
 
 \begin_layout Standard
@@ -8274,15 +8808,13 @@ Esta licença é aceita para trabalhos culturais livres.
 \end_layout
 
 \begin_layout Description
-Compartilhar: copiar, distribuir, exibir e executar a obra
+Compartilhar: copiar e redistribuir o material em qualquer suporte ou formato.
 \end_layout
 
 \begin_layout Description
-Reeditar: criar obras derivadas
-\begin_inset Newpage pagebreak
-\end_inset
-
-
+Adaptar: remixar, transformar, e criar a partir do material para qualquer
+ fim, mesmo que comercial.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -8290,26 +8822,33 @@ Sob as seguintes condições:
 \end_layout
 
 \begin_layout Description
-Atribuição: Deve-se dar crédito ao autor original, da forma especificada
- pelo autor ou licenciante.
+Atribuição: você deve dar o crédito apropriado, prover um 
+\emph on
+link
+\emph default
+ para a licença e indicar se mudanças foram feitas.
+ Você deve fazê-lo em qualquer circunstância razoável, mas de nenhuma maneira
+ que sugira que o licenciante apoia você ou o seu uso.
 \end_layout
 
 \begin_layout Description
-Compartilhamento
+CompartilhaIgual: Se você remixar, transformar, ou criar a partir do material,
+ tem de distribuir as suas contribuições sob a mesma licença que o original.
+\end_layout
+
+\begin_layout Description
+Sem
 \begin_inset space ~
 \end_inset
 
-pela
+restrições
 \begin_inset space ~
 \end_inset
 
-mesma
-\begin_inset space ~
-\end_inset
-
-Licença: se alterar, transformar, ou contruir um novo trabalho a partir
- deste, pode-se distribuir o trabalho final somente sob a mesma licensa,
- ou licensa similiar ou compatível.
+adicionais: Você não pode aplicar termos jurídicos ou medidas de caráter
+ tecnológico que restrinjam legalmente outros de fazerem algo que a licença
+ permita.
+ 
 \end_layout
 
 \begin_layout Subsection*
@@ -8324,7 +8863,7 @@ O resumo da licença pode ser obtido em:
 Português: 
 \begin_inset CommandInset href
 LatexCommand href
-target "http://creativecommons.org/licenses/by-sa/3.0/deed.pt"
+target "https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR"
 literal "false"
 
 \end_inset
@@ -8336,7 +8875,7 @@ literal "false"
 Inglês: 
 \begin_inset CommandInset href
 LatexCommand href
-target "http://creativecommons.org/licenses/by-sa/3.0/"
+target "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
 literal "false"
 
 \end_inset
@@ -8349,10 +8888,10 @@ A licença completa pode ser obtida em:
 \end_layout
 
 \begin_layout Description
-Inglês: 
+Português: 
 \begin_inset CommandInset href
 LatexCommand href
-target "http://creativecommons.org/licenses/by-sa/3.0/legalcode"
+target "https://creativecommons.org/licenses/by-sa/4.0/legalcode.pt"
 literal "false"
 
 \end_inset
@@ -8360,8 +8899,13 @@ literal "false"
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
+\begin_layout Description
+Inglês: 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://creativecommons.org/licenses/by-sa/4.0/legalcode"
+literal "false"
+
 \end_inset
 
 
@@ -8372,148 +8916,52 @@ Onde Adquirir Este Material
 \end_layout
 
 \begin_layout Standard
-A versão PDF deste material poderá ser baixada de:
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
-
-\size footnotesize
-
-\begin_inset CommandInset href
-LatexCommand href
-name "http://lalfrecom.googlecode.com/files/formulario-eletromagnetismo-a4-0.1.0.pdf"
-target "http://lalfrecom.googlecode.com/files/formulario-eletromagnetismo-a4-0.1.0.pdf"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-O código-fonte 
-\begin_inset CommandInset href
-LatexCommand href
-name "formulario-eletromagnetismo.lyx"
-target "http://code.google.com/p/lalfrecom/source/browse/trunk/referencias/formulario-eletromagnetismo.lyx"
-literal "false"
-
-\end_inset
-
-, escrito em \SpecialChar LyX
-, para gerar este material, pode ser obtido da aba 
+\paragraph_spacing onehalf
+O corrente material foi compilado para 
 \emph on
-Source, 
+folha
 \emph default
-item 
-\emph on
-Browse
-\emph default
-, pasta 
-\emph on
-svn/trunk/referencias/ 
-\emph default
-de:
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset href
-LatexCommand href
-target "http://lalfrecom.googlecode.com"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection*
-Notas
-\end_layout
-
-\begin_layout Standard
-Para compilar o material a partir do código-fonte, deve-se instalar o \SpecialChar LyX
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset CommandInset href
-LatexCommand href
-target "http://www.lyx.org/Download"
-literal "false"
-
-\end_inset
-
-,
-\begin_inset Newline newline
-\end_inset
-
-o estilo \SpecialChar LaTeX
  
 \emph on
-misc.sty
+A4 frente e verso
 \emph default
- do projeto `efmt'
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset CommandInset href
-LatexCommand href
-target "http://code.google.com/p/efmt/source/browse/#svn/trunk/latex"
-literal "false"
-
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-e o estilo \SpecialChar LaTeX
- 
-\emph on
-siunitx.sty
-\begin_inset Newline newline
-\end_inset
-
-
-\emph default
-
-\begin_inset CommandInset href
-LatexCommand href
-target "http://mirror.ctan.org/macros/latex/contrib/siunitx.zip"
-literal "false"
-
-\end_inset
-
 .
- 
+ Uma cópia em PDF poderá ser baixada no seguinte endereço, onde também encontra-
+se a versão para 
+\emph on
+folha A5 frente e verso
+\emph default
+, além de outros materiais.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+\align center
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.engenhartis.com.br/materiais/materiais-abertos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+=== Início da bibliografia.
+ ===
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
