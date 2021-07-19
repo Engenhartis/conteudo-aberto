@@ -914,8 +914,8 @@ Espera-se que ele possa auxiliar os estudantes na interpretação e na escolha
 
 \begin_layout Standard
 \paragraph_spacing onehalf
-Os professores também poderão fazer uso deste material, tanto na forma digital
- quanto impressa, como formulário de consulta durante avaliações.
+Os professores também poderão fazer uso deste material como formulário de
+ consulta durante avaliações, tanto na forma digital quanto impressa.
 \end_layout
 
 \begin_layout Standard
@@ -946,12 +946,13 @@ folha
 A4 frente e verso
 \emph default
 .
- Uma cópia poderá ser baixada no seguinte endereço, onde também encontra-se
- a versão para 
+ Uma cópia em PDF poderá ser baixada no seguinte endereço, onde também encontra-
+se a versão para 
 \emph on
 folha A5 frente e verso
 \emph default
 , além de outros materiais.
+ Neste mesmo endereço, sugestões poderão ser postadas.
 \end_layout
 
 \begin_layout Standard
@@ -968,7 +969,7 @@ https://www.engenhartis.com.br/materiais/materiais-abertos
 \end_inset
 
 
-\begin_inset VSpace bigskip
+\begin_inset VSpace medskip
 \end_inset
 
 
@@ -1090,6 +1091,10 @@ status open
 \begin_layout Standard
 \paragraph_spacing onehalf
 \align center
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \begin_inset Phantom Phantom
 status open
 
@@ -3264,7 +3269,7 @@ No domínio do tempo:
 \end_layout
 
 \begin_layout Itemize
-no domínio da freqüência:
+no domínio da frequência:
 \end_layout
 
 \begin_layout Standard
@@ -3280,7 +3285,7 @@ no domínio da freqüência:
 \end_layout
 
 \begin_layout Itemize
-conversão do domínio da freqüência para o domínio do tempo:
+conversão do domínio da frequência para o domínio do tempo:
 \end_layout
 
 \begin_layout Standard
@@ -3429,7 +3434,7 @@ No domínio do tempo:
 \end_layout
 
 \begin_layout Itemize
-no domínio da freqüência (campos harmônicos):
+no domínio da frequência (campos harmônicos):
 \end_layout
 
 \begin_layout Standard
@@ -4026,7 +4031,7 @@ No domínio do tempo:
 \end_layout
 
 \begin_layout Itemize
-no domínio da freqüência (para ondas harmônicas):
+no domínio da frequência (para ondas harmônicas):
 \end_layout
 
 \begin_layout Standard
@@ -4062,7 +4067,7 @@ i(z,t) & = & I_{0}^{+}e^{-\alpha z}\cos(\omega t-\beta z)+I_{0}^{-}e^{+\alpha z}
 \end_layout
 
 \begin_layout Itemize
-no domínio da freqüência:
+no domínio da frequência:
 \end_layout
 
 \begin_layout Standard
@@ -5116,7 +5121,7 @@ Material
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\sigma(\siemens\per\metre)$
+\begin_inset Formula $\sigma(\si{\siemens\per\metre})$
 \end_inset
 
 
@@ -5527,7 +5532,7 @@ Dielétrico
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $E_{br}(\volt\per\metre)$
+\begin_inset Formula $E_{br}(\si{\volt\per\metre})$
 \end_inset
 
 
@@ -5555,7 +5560,7 @@ Dielétrico
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\sigma(\siemens\per\metre)$
+\begin_inset Formula $\sigma(\si{\siemens\per\metre})$
 \end_inset
 
 
@@ -6358,7 +6363,7 @@ Material
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\sigma(\siemens\per\metre)$
+\begin_inset Formula $\sigma(\si{\siemens\per\metre})$
 \end_inset
 
 
@@ -6795,7 +6800,7 @@ cilíndricas para cartesianas
 \begin_layout Standard
 \begin_inset Formula 
 \[
-P(\rho,\phi,z)\ \Rightarrow\ P(x,y,z)
+P(\rho,\phi,z)\ \rightarrow\ P(x,y,z)
 \]
 
 \end_inset
@@ -8746,8 +8751,8 @@ Histórico
 \end_layout
 
 \begin_layout Subsection*
-2021 – v\SpecialChar endofsentence
- 1.0.0
+v\SpecialChar endofsentence
+ 1.0.0 (julho de 2021)
 \end_layout
 
 \begin_layout Itemize
@@ -8767,6 +8772,10 @@ Retiradas as informações para obtenção do código-fonte e compilação do ma
 \end_layout
 
 \begin_layout Itemize
+Algumas correções de pormenores.
+\end_layout
+
+\begin_layout Itemize
 Publicação em conjunto com a 
 \emph on
 Engenhartis
@@ -8775,8 +8784,8 @@ Engenhartis
 \end_layout
 
 \begin_layout Subsection*
-2011 – v\SpecialChar endofsentence
- 0.1.0
+v\SpecialChar endofsentence
+ 0.1.0 (março de 2011)
 \end_layout
 
 \begin_layout Standard
@@ -8849,6 +8858,56 @@ adicionais: Você não pode aplicar termos jurídicos ou medidas de caráter
  tecnológico que restrinjam legalmente outros de fazerem algo que a licença
  permita.
  
+\end_layout
+
+\begin_layout Subsection*
+Nota
+\end_layout
+
+\begin_layout Quote
+\noindent
+\align block
+
+\series bold
+\emph on
+NENHUMA GARANTIA É FORNECIDA.
+
+\series default
+ Os materiais são disponibilizados 
+\begin_inset Quotes eld
+\end_inset
+
+no estado em que se encontram
+\begin_inset Quotes erd
+\end_inset
+
+ (
+\begin_inset Quotes eld
+\end_inset
+
+as-is
+\begin_inset Quotes erd
+\end_inset
+
+) e 
+\begin_inset Quotes eld
+\end_inset
+
+como disponível
+\begin_inset Quotes erd
+\end_inset
+
+ (
+\begin_inset Quotes eld
+\end_inset
+
+as-available
+\begin_inset Quotes erd
+\end_inset
+
+).
+ USE-OS SOB SEUS PRÓPRIOS RISCOS.
+ Veja o texto da licença para mais informações.
 \end_layout
 
 \begin_layout Subsection*
@@ -8931,7 +8990,7 @@ se a versão para
 \emph on
 folha A5 frente e verso
 \emph default
-, além de outros materiais.
+, além de outros materiais:
 \end_layout
 
 \begin_layout Standard
