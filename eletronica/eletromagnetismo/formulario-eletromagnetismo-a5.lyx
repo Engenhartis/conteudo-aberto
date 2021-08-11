@@ -6,16 +6,39 @@
 \origin unavailable
 \textclass article
 \begin_preamble
-%\usepackage{indentfirst}
+% Indentação do primeiro parágrafo.
+\usepackage{indentfirst}
+
+% Garante não ultrapassar a URL para além da borda do texto.
+%	(Acrescentar também 'hyphens' nas opções globais da "Classe de Documento".)
+\sloppy
+
+% Algumas definições personalizadas.
 \usepackage{misc}
 
-%\usepackage{unidades}
+% Tratamento de unidades no SI.
 \usepackage[load-configurations=version-1]{siunitx}
+
+% Largura da linha de rodapé.
+%	(Por padrão, o tamanho é 0pt.)
+\renewcommand{\footrulewidth}{0.4pt}
+
+% Impressão em livreto.
+%	Ver também: booklet.pdf.
+%	1. Rodar com a opção "noprint" até estabilizar as referências.
+%	2. Rodar com a opção "print" e "\nofiles" para gerar a versão final.
+%\usepackage[noprint]{booklet}
+%\usepackage[print]{booklet} % \nofiles
+%\source{\magstep0}{0.5\paperheight}{\paperwidth}
+%\target{\magstepminus0}{\paperheight}{\paperwidth}
+%\setpdftargetpages % set output page size
+%\pagespersignature{32}
 \end_preamble
-\options titlepage
+\options titlepage, hyphens
 \use_default_options false
 \begin_modules
 theorems-ams
+customHeadersFooters
 \end_modules
 \maintain_unincluded_children false
 \language brazilian
@@ -39,20 +62,23 @@ theorems-ams
 \output_sync 0
 \bibtex_command default
 \index_command default
-\paperfontsize 10
+\paperfontsize 11
 \spacing single
 \use_hyperref true
+\pdf_title "Formulário de Eletromagnetismo"
+\pdf_author "Engenhartis"
+\pdf_keywords "formulário, eletromagnetismo"
 \pdf_bookmarks true
-\pdf_bookmarksnumbered false
-\pdf_bookmarksopen false
-\pdf_bookmarksopenlevel 1
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 2
 \pdf_breaklinks true
 \pdf_pdfborder true
 \pdf_colorlinks true
 \pdf_backref page
 \pdf_pdfusetitle true
 \papersize a5paper
-\use_geometry false
+\use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -73,10 +99,17 @@ theorems-ams
 \justification true
 \use_refstyle 0
 \use_minted 0
+\branch a5
+\selected 1
+\filename_suffix 0
+\color #cae8cd
+\end_branch
 \index Índice
 \shortcut idx
 \color #008000
 \end_index
+\topmargin 2.5cm
+\bottommargin 2.5cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -86,8 +119,8 @@ theorems-ams
 \quotes_style english
 \dynamic_quotes 0
 \papercolumns 1
-\papersides 2
-\paperpagestyle default
+\papersides 1
+\paperpagestyle fancy
 \tracking_changes false
 \output_changes false
 \html_math_output 0
@@ -97,19 +130,85 @@ theorems-ams
 
 \begin_body
 
-\begin_layout Title
-Formulário de Eletromagnetismo
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Para gerar a brochura:
+\end_layout
+
+\begin_layout Enumerate
+Exportar para pdf.
+\end_layout
+
+\begin_layout Enumerate
+Executar:
 \begin_inset Newline newline
 \end_inset
 
 
-\size footnotesize
+\family typewriter
+$ pdfbook2 -i 90 -o 60 formulario-eletromagnetismo-a5.pdf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+
+\family typewriter
+\size huge
+\emph on
+\begin_inset Graphics
+	filename /home/mpt/Documentos/Projetos/engenhartis/engenhartis.local/logo/logo-engenhartis.png
+	lyxscale 10
+	height 3cm
+
+\end_inset
+
+
+\begin_inset VSpace vfill
+\end_inset
+
+
+\family default
+\emph default
+Formulário de Eletromagnetismo
+\size default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\size small
 v.
- 1.0.0-a5
+ 1.0.0-a5-brochura-fv 
 \end_layout
 
 \begin_layout Date
 julho de 2021
+\family typewriter
+\size huge
+\emph on
+
+\begin_inset VSpace vfill
+\end_inset
+
+
+\family default
+\size default
+\emph default
+
+\begin_inset Graphics
+	filename /home/mpt/Documentos/Projetos/engenhartis/engenhartis.conteudo-aberto/imagens/icones/cc-by-sa-186x62-icon-cc-0.75.png
+	height 0.9cm
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -123,10 +222,6 @@ status open
 thispagestyle{empty}
 \end_layout
 
-\end_inset
-
-
-\begin_inset Newpage cleardoublepage
 \end_inset
 
 

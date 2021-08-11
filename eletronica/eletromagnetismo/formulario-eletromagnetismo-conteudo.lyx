@@ -78,6 +78,16 @@ theorems-ams
 \justification true
 \use_refstyle 0
 \use_minted 0
+\branch a5
+\selected 0
+\filename_suffix 0
+\color #cae8cd
+\end_branch
+\branch a4
+\selected 0
+\filename_suffix 0
+\color #cae8cd
+\end_branch
 \index Índice
 \shortcut idx
 \color #008000
@@ -785,6 +795,32 @@ mathrm{esp}}
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Garante a nova página, limpa, ímpar:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hbox{}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Newpage cleardoublepage
 \end_inset
 
@@ -937,6 +973,12 @@ literal "true"
 
 \begin_layout Standard
 \paragraph_spacing onehalf
+\begin_inset Branch a4
+inverted 0
+status open
+
+\begin_layout Standard
+\paragraph_spacing onehalf
 O corrente formulário foi compilado para 
 \emph on
 folha
@@ -949,10 +991,42 @@ A4 frente e verso
  Uma cópia em PDF poderá ser baixada no seguinte endereço, onde também encontra-
 se a versão para 
 \emph on
-folha A5 frente e verso
+brochura (livreto) A5 frente e verso
 \emph default
 , além de outros materiais.
  Neste mesmo endereço, sugestões poderão ser postadas.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch a5
+inverted 0
+status open
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+O corrente formulário foi compilado para 
+\emph on
+formato brochura (livreto) tamanho A5 a ser impresso em folha
+\emph default
+ 
+\emph on
+A4 frente e verso
+\emph default
+.
+ Uma cópia em PDF poderá ser baixada no seguinte endereço, onde também encontra-
+se a versão para 
+\emph on
+folha A4 frente e verso
+\emph default
+, além de outros materiais.
+ Neste mesmo endereço, sugestões poderão ser postadas.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3208,6 +3282,23 @@ Densidade de Corrente de Dispersão (Deslocamento)
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Branch a5
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Equações de Maxwell (gerais)
 \end_layout
@@ -3726,7 +3817,17 @@ Profundidade pelicular:
 \end_inset
 
 
+\begin_inset Branch a4
+inverted 0
+status open
+
+\begin_layout Standard
 \begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -4392,7 +4493,17 @@ coordenadas cilíndricas
 \end_inset
 
 
+\begin_inset Branch a4
+inverted 0
+status open
+
+\begin_layout Standard
 \begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -4411,15 +4522,25 @@ coordenadas esféricas
 \end_inset
 
 
+\begin_inset Branch a5
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
 gradiente:
-\begin_inset Separator latexpar
-\end_inset
-
-
 \end_layout
 
 \begin_deeper

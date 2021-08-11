@@ -54,10 +54,13 @@ customHeadersFooters
 \paperfontsize 12
 \spacing single
 \use_hyperref true
+\pdf_title "Formulário de Eletromagnetismo"
+\pdf_author "Engenhartis"
+\pdf_keywords "formulário, eletromagnetismo"
 \pdf_bookmarks true
-\pdf_bookmarksnumbered false
-\pdf_bookmarksopen false
-\pdf_bookmarksopenlevel 1
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 2
 \pdf_breaklinks true
 \pdf_pdfborder true
 \pdf_colorlinks true
@@ -85,6 +88,11 @@ customHeadersFooters
 \justification true
 \use_refstyle 0
 \use_minted 0
+\branch a4
+\selected 1
+\filename_suffix 0
+\color #cae8cd
+\end_branch
 \index Índice
 \shortcut idx
 \color #008000
