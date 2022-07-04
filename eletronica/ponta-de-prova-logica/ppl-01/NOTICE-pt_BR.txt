@@ -1,0 +1,101 @@
+SPDX-FileCopyrightText: 2022 Engenhartis <engenhartis@engenhartis.com.br>
+SPDX-License-Identifier: CERN-OHL-S-2.0
+
+================================================================================
+COPYRIGHT 2022 Engenhartis (www.engenhartis.com.br)
+================================================================================
+
+================================================================================
+
+LICENÇA
+
+O projeto "Ponta de Prova Lógica - Modelo PPL-01" é liberado sob a licença
+CERN-OHL-S v2, cujo teor encontra-se no arquivo LICENSE.txt e também em
+https://ohwr.org/cern_ohl_s_v2.txt.
+
+Você pode redistribuir e modificar os arquivos-fonte listados abaixo e fazer
+produtos com base nestes fontes sob os termos da CERN-OHL-S v2.
+
+Estas fontes são distribuídas SEM NENHUMA GARANTIA, IMPLÍCITA OU EXPRESSA,
+INCLUINDO DE COMERCIALIZAÇÃO, QUALIDADE SATISFATÓRIA E ADEQUAÇÃO PARA UM
+PROPÓSITO PARTICULAR. Por favor, veja a licença CERN-OHL-S v2 para as condições
+aplicáveis.
+
+Conforme a seção 4 da CERN-OHL-S v2, se Você produzir um "hardware" baseado
+nestes fontes, Você deverá, onde praticável, manter a Localização dos Fontes
+visível, ao menos, na documentação da Ponta de Prova Lógica - Modelo PPL-01 ou
+de outros produtos que você fizer utilizando estes fontes.
+
+================================================================================
+
+LOCALIZAÇÃO DOS ARQUIVOS-FONTE
+
+Os arquivos do projeto podem ser obtidos em:
+
+	https://engenhartis.com.br/?smd_process_download=1&download_id=1222
+	
+A versão mais atual poderá ser obtida em:
+
+	https://github.com/engenhartis/conteudo-aberto/tree/main/eletronica/ponta-de-prova-logica/ppl-01
+
+================================================================================
+
+NOTAS
+
+Veja o arquivo LICENSE.txt para informações completas a respeito da licença.
+
+Veja o arquivo CHANGES.txt para informações sobre as alterações realizadas.
+
+================================================================================
+
+PROGRAMA DOS FONTES
+
+	.KiCad EDA (disponível em https://www.kicad.org/)
+
+================================================================================
+
+ARQUIVOS LICENCIADOS
+
+Os seguintes arquivos são liberados sob a lincença CERN-OHL-S v2:
+
+./fontes-kicad:
+	ppl-01-cache.lib
+	ppl-01.kicad_pcb
+	ppl-01.pro
+	ppl-01.sch
+
+./fontes-kicad/comps:
+	Button_8mm_x_8mm_H2.5mm_V5.5mm.kicad_mod
+	MountingHole_1mm_M1_DIN965_Pad.kicad_mod
+	ponta-de-prova-fixacao-20mm-x-10mm-x-10mm.kicad_mod
+
+./gerber:
+	ppl-01-B_Cu.gbr
+	ppl-01-B_Mask.gbr
+	ppl-01-B_SilkS.gbr
+	ppl-01-drl.rpt
+	ppl-01-Edge_Cuts.gbr
+	ppl-01-F_SilkS.gbr
+	ppl-01-NPTH.drl
+	ppl-01-NPTH-drl_map.gbr
+	ppl-01-PTH.drl
+	ppl-01-PTH-drl_map.gbr
+
+./imagens:
+	ppl-01.1.1#vista-isometrica-1-com-componentes.jpg
+	ppl-01.1.1#vista-isometrica-2-com-componentes.jpg
+	ppl-01.1.1#vista-superior-e-inferior-com-componentes.jpg
+	ppl-01.1.1#vista-superior-e-inferior-sem-componentes.jpg
+
+./lista-de-materiais:
+	ppl01-lista-de-materiais-para-producao.ods
+
+./pdf:
+	ppl-01#pcb-B.Cu-espelhado.pdf
+	ppl-01#pcb-B.Mask.pdf
+	ppl-01#pcb-F.SilkS.pdf
+	ppl-01#pcb.pdf
+	ppl-01#sch.pdf
+	
+================================================================================
+

@@ -7,10 +7,10 @@ Sheet 1 1
 Title "Ponta de Prova Lógica"
 Date "2022-04-21"
 Rev "01.1.1"
-Comp "Engenhartis"
-Comment1 "Use sob seu próprio risco. Nenhuma garantia fornecida."
-Comment2 "CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)"
-Comment3 "(Herdado de 'circuito-base/ponta-de-prova-logica.sch'.)"
+Comp "Copyright 2022 Engenhartis (www.engenhartis.com.br)"
+Comment1 "USE ON YOUR OWN RISK. NO WARRANTY GIVEN. Read the license before the use."
+Comment2 "USE SOB SEU PRÓPRIO RISCO. NENHUMA GARANTIA FORNECIDA. Leia a licença antes de usar."
+Comment3 "Licença: CERN-OHL-S (https://ohwr.org/cern_ohl_s_v2.pdf)"
 Comment4 "Modelo: PPL-01"
 $EndDescr
 $Comp

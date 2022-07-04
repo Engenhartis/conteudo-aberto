@@ -1,0 +1,16 @@
+REGISTROS DE ALTERAÇÕES
+========= == ==========
+
+O atual projeto é disponibilizado como "hardware" de fonte aberta ("open source
+hardware"). Você pode redistribuir e modificar os arquivos-fonte listados abaixo
+e fazer produtos com base nestas fontes sob os termos da CERN-OHL-S v2
+(https://ohwr.org/cern_ohl_s_v2.txt). Veja os arquivos NOTICE.txt e
+LICENSE.txt para mais informações.
+
+Por favor, registre abaixo a data e uma breve descrição da alteração realizada
+no projeto. Linhas podem ser adicionadas, mas NENHUMA LINHA PODERÁ SER REMOVIDA.
+
+
+Data			Descrição
+--------------------------------------------------------------------------------
+04-07-2022	Projeto inicial disponibilizado, na revisão 1.1.1.
